@@ -71,6 +71,7 @@ home directory in a folder called ``.m2``. The path will look something like: ``
 folder where the downloaded OSM files can be cached. You can edit this
 in the configuration
 [here](https://github.com/open-city/open-tracking-tools/blob/master/open-tracking-tools-otp/clearstreets-graph-builder.xml#L19)
-The "Run" button in the lower right hand corner of that dialog box should be
-clickable now so click it. The graph builder will start downloading all of the
-OSM data that it needs (which will take a while).
+
+13. The "Run" button in the lower right hand corner of the Run Configuration
+dialog box should be clickable now so click it. The graph builder will start
+downloading all of the OSM data that it needs (which will take a while).
