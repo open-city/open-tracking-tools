@@ -31,16 +31,16 @@ simulation and filtering.
 Eclipse.
 
 3. Clone this repository
-
-```bash 
-$ git clone https://github.com/open-city/open-tracking-tools.git
-```
+ 
+    ```bash 
+    $ git clone https://github.com/open-city/open-tracking-tools.git
+    ```
 
 4. Clone the Open City fork of the OpenTripPlanner repo
 
-``` bash
-$ git clone https://github.com/open-city/OpenTripPlanner.git
-```
+    ``` bash
+    $ git clone https://github.com/open-city/OpenTripPlanner.git
+    ```
 
 6. Import both the open-tracking-tools project and the OpenTripPlanner project 
 into Eclipse as "Existing Maven Projects".
@@ -50,12 +50,10 @@ graph-builder.jar file and create a Run configuration.
 
 8. Create a new "Java Application" configuration.
 
-9. On the "Main" tab, the "Main class" should be
-``org.opentripplanner.graph_builder.GraphBuilderMain``
+9. On the "Main" tab, the "Main class" should be ``org.opentripplanner.graph_builder.GraphBuilderMain``
 
 10. On the "Arguments" tab, put the absolute path to [this
-file](https://github.com/open-city/open-tracking-tools/blob/master/open-tracking-tools-otp/clearstreets-graph-builder.xml)
-in the "Program Arguments" box and under "VM Arguments" put "-Xmx2048M" (the
+file](https://github.com/open-city/open-tracking-tools/blob/master/open-tracking-tools-otp/clearstreets-graph-builder.xml) in the "Program Arguments" box and under "VM Arguments" put "-Xmx2048M" (the
 graph builder needs at least that much memory).
 
 11. On the "Classpath" tab, click "User entries" and then the "Add projects"
@@ -64,8 +62,7 @@ button on the right. Add the ``open-tracking-tools-api`` and
 for the Cognitive Foundary components (for some reason this does not get
 resolve on it's own). To do this, you'll click the "Add External JARs" button
 on the right and navigate to where Maven cached it. This is typically in your
-home directory in a folder called ``.m2``. The path will look something like: ``
-~/.m2/repository/gov/sandia/foundry/cognitive-foundry/3.3.2``.
+home directory in a folder called ``.m2``. The path will look something like: ``~/.m2/repository/gov/sandia/foundry/cognitive-foundry/3.3.2``.
 
 12. Before you run the program, make sure that you have a ``/tmp/osm-cache``
 folder where the downloaded OSM files can be cached. You can edit this
